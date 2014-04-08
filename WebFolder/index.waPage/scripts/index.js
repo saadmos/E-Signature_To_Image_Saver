@@ -10,6 +10,14 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
+					
+					if(!waf.widgets.textField1.getValue()){
+						
+						alert("You should provide a signature name to save it !!");
+					
+					}
+				     else{
+					
 						if (waf.widgets.signaturePad1.isEmpty()) alert("You should first add signature before saving it !!");
 				else {
 				    // prepare the image file
@@ -39,7 +47,8 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				    };
 
 				    xhr.send(formData);
-				}				
+				}
+				     }
         
          
 	};// @lock
