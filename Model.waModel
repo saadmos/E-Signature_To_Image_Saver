@@ -1,0 +1,63 @@
+﻿{
+	"toJSON": true,
+	"extraProperties": {
+		"version": "2",
+		"classes": {
+			"Signature": {
+				"panelColor": "#7F7F7F",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": true,
+					"position": {
+						"X": 25,
+						"Y": 20
+					}
+				}
+			}
+		},
+		"model": {
+			"scriptMode": "manual",
+			"workspaceLeft": 0,
+			"workspaceTop": 0
+		}
+	},
+	"dataClasses": [
+		{
+			"name": "Signature",
+			"className": "Signature",
+			"collectionName": "SignatureCollection",
+			"scope": "public",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"primKey": true
+				},
+				{
+					"name": "signature_image",
+					"kind": "storage",
+					"scope": "public",
+					"type": "image"
+				},
+				{
+					"name": "creationDate",
+					"kind": "storage",
+					"scope": "public",
+					"type": "date",
+					"simpleDate": false
+				},
+				{
+					"name": "name",
+					"scope": "public",
+					"type": "string",
+					"kind": "storage"
+				}
+			]
+		}
+	],
+	"type": []
+}
